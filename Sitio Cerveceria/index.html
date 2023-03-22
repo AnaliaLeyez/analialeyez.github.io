@@ -8,7 +8,7 @@
   <meta name="author" content="Analía Leyez">
   <meta name="description" content="Sitio Web de Cervecería">
   <meta name="keywords" content="cerveza artesanal">
-  <!--fuentes Google-->
+  <!--fuentes google-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
@@ -18,14 +18,14 @@
   <!--icono-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="icon" type="image/x-icon" href="img/icon-pag.png">
-  <!--Bootstrap-->
+  <!--bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link href="ceveceria.css" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Barra de navegacion -->
+  <!-- barra de navegacion -->
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="·">
@@ -44,16 +44,19 @@
             <a class="nav-link" href="#novedades">Novedades</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Nosotros</a>
+            <a class="nav-link" href="#historia">Historia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Conocenos</a>
+            <a class="nav-link" href="#nosotros">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#conocenos">Conocenos</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- Seccion Hero -->
+  <!-- seccion Hero -->
   <div class="container-fluid">
     <div id="home" class="row align-items-center hero">
       <div class="col-lg-4 offset-lg-2">
@@ -67,9 +70,10 @@
 
   </div>
 
-  <!-- Seccion novedades -->
-  <div class="row mx-0">
-    <div id="novedades" class="col-md-5 offset-sm-1 offset-md-2">
+  <!-- seccion novedades y testimonios -->
+  <div class="row mx-0 py-3 fondo-claro">
+    <!-- seccion novedades -->
+    <div id="novedades" class="scrool-section col-md-5 offset-sm-1 offset-md-2">
       <h2>Novedades</h2>
       <ul class="lista-novedades">
         <li class="lista-novedades">
@@ -84,7 +88,7 @@
         </li>
         <li>
           <a href="#">
-            <img src="img/novedades3.jpeg">Ahora pueden adquirir nuestra cerveza en...
+            <img src="img/novedades3.jpeg">Ahora encontrá nuestra cerveza en...
           </a>
         </li>
         <li>
@@ -98,58 +102,200 @@
           </a>
         </li>
       </ul>
-    </div><!-- Fin de novedades -->
-    <!-- Carrusel de testimonios -->
-      <section id="testimonios" class="testimonios fondo-testimonios col-md-3">
-        <h2 class="text-center">Testimonios</h2>
-        <div id="carouselExampleIndicators" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="container">
-                <img src="img/testimonio1.jpg" class="testimonio-imagen d-block rounded-bottom-circle" alt="foto testimonio 1">
-                <p class="testimonio-texto">Mi cerveza favorita</p>
-                <p class="testimonio-barrio">Estevan, San Martín</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container">
-                <img src="img/testimonio2.jpg" class="testimonio-imagen d-block rounded-bottom-circle" alt="foto testimonio 2">
-                <p class="testimonio-texto">Fan de #LaFresca</p>
-                <p class="testimonio-barrio">Romina, Flores</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container">
-                <img src="img/testimonio3.jpg" class="testimonio-imagen d-block rounded-bottom-circle" alt="foto testimonio 3">
-                <p class="testimonio-texto">La birra que elijo para cerrar la semana</p>
-                <p class="testimonio-barrio">Pablo, La Boca</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container">
-                <img src="img/testimonio4.jpeg" class="testimonio-imagen d-block rounded-bottom-circle" alt="foto testimonio 4">
-                <p class="testimonio-texto">#LaFresca Tiene la receta justa!</p>
-                <p class="testimonio-barrio">Aldana, Villa Crespo</p>
-              </div>
+    </div><!-- fin de novedades -->
+    <!-- carrusel de testimonios -->
+    <section id="testimonios" class="testimonios fondo-testimonios scrool-section col-md-3">
+      <h2 class="text-center">Testimonios</h2>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img src="img/testimonio1.jpg" class="testimonio-imagen d-block rounded-bottom-circle"
+                alt="foto testimonio 1">
+              <p class="testimonio-texto">Mi cerveza favorita</p>
+              <p class="testimonio-barrio">Estevan, San Martín</p>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="carousel-item">
+            <div class="container">
+              <img src="img/testimonio2.jpg" class="testimonio-imagen d-block rounded-bottom-circle"
+                alt="foto testimonio 2">
+              <p class="testimonio-texto">Fan de #LaFresca</p>
+              <p class="testimonio-barrio">Romina, Flores</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img src="img/testimonio3.jpg" class="testimonio-imagen d-block rounded-bottom-circle"
+                alt="foto testimonio 3">
+              <p class="testimonio-texto">La birra que elijo para cerrar la semana</p>
+              <p class="testimonio-barrio">Pablo, La Boca</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img src="img/testimonio4.jpeg" class="testimonio-imagen d-block rounded-bottom-circle"
+                alt="foto testimonio 4">
+              <p class="testimonio-texto">#LaFresca Tiene la receta justa!</p>
+              <p class="testimonio-barrio">Aldana, Villa Crespo</p>
+            </div>
+          </div>
         </div>
-      </section> <!-- Fin Carrusel de testimonios -->
-  </div> <!--fin seccion novedades + tertimonios-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section> <!-- fin carrusel de testimonios -->
+  </div> <!--fin seccion novedades + testimonios-->
 
+  <!-- historia -->
+  <div id="historia" class="fondo-oscuro scrool-section row align-items-center py-5 mx-0">
+    <div class="col-lg-2 col-md-3 offset-lg-2 col-sm-12 d-block">
+      <img src="img/historia1.jpg" alt="historia 1" class="img-historia img-fluid">
+    </div>
+    <div class="col-lg-2 col-md-3 d-none d-sm-block">
+      <img src="img/historia2.jpg" alt="historia 2" class="img-fluid">
+    </div>
+    <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
+      <h2>Historia</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus labore quibusdam nulla odio officia, illum
+        autem repellat in aut mollitia cumque enim, quam numquam voluptate explicabo obcaecati expedita, minus
+        consectetur.</p>
+    </div>
+  </div> <!-- fin historia -->
 
-  <!-- Modal -->
-  <!-- Promociones Modal -->
+  <!-- inicio nosotros -->
+  <div id="nosotros" class="fondo-claro scrool-section row align-items-stretch py-3 mx-0 py-4">
+    <div class="col-lg-8 offset-lg-2">
+      <h2>Nuestro staff</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+        <div class="col">
+          <div class="card h-100 text-bg-secondary">
+            <img src="img/staff1.jpeg" class="card-img-top" alt="foto Feliciano">
+            <div class="card-body">
+              <h5 class="card-title">Feliciano Chamorro</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque dolores optio officia
+                et tempore numquam molestias exercitationem, ab modi ut eveniet sapiente similique commodi quibusdam
+                ipsam. Reiciendis accusamus libero a!</p>
+            </div>
+            <div class="card-footer bg-gradient">
+              <small>Experto cervecero</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-bg-dark">
+            <img src="img/staff2.jpeg" class="card-img-top" alt="foto Ana">
+            <div class="card-body">
+              <h5 class="card-title">Ana Jordan</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque dolores optio officia
+                et tempore numquam molestias exercitationem, ab modi ut eveniet sapiente similique commodi quibusdam
+                ipsam. Reiciendis accusamus libero a!</p>
+            </div>
+            <div class="card-footer bg-gradient">
+              <small>Representante Legal y administración</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-bg-secondary">
+            <img src="img/staff3.jpeg" class="card-img-top" alt="foto Alfonso">
+            <div class="card-body">
+              <h5 class="card-title">Alonso Marfo</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque dolores optio officia
+                et tempore numquam molestias exercitationem, ab modi ut eveniet sapiente similique commodi quibusdam
+                ipsam. Reiciendis accusamus libero a!</p>
+            </div>
+            <div class="card-footer bg-gradient">
+              <small>Desarrollador Web y Estudiante de marketing digital</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-bg-dark">
+            <img src="img/staff4.jpeg" class="card-img-top" alt="foto Feliciano">
+            <div class="card-body">
+              <h5 class="card-title">Feliciano Chamorro</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque dolores optio officia
+                et tempore numquam molestias exercitationem, ab modi ut eveniet sapiente similique commodi quibusdam
+                ipsam. Reiciendis accusamus libero a!</p>
+            </div>
+            <div class="card-footer bg-gradient">
+              <small>Relaciones públicas</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div><!-- fin staff -->
+
+  <!-- inicio conocenos -->
+  <div id="conocenos" class="row py-3 scrool-section">
+    <!-- inicio mapa -->
+    <div class="col-md-4 offset-md-2">
+      <h2>Visitanos</h2>
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.634664972918!2d-58.41269304948146!3d-34.588109564083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca82346c5f59%3A0x43d6cddae036b48b!2sAlto%20Palermo%20Shopping%20Center%2C%20Av.%20Sta.%20Fe%203253%20Piso%201.%20Local%20L0055%2C%20C1425BGH%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2sca!4v1679524192812!5m2!1ses-419!2sca"></iframe>
+      </div>
+    </div>
+
+    <!-- inicio formulario contacto -->
+    <div class="col-md-4  mt-4 mt-sm-0">
+      <h2>Contactanos</h2>
+
+      <form class="row g-3">
+        <div class="col-12">
+          <label for="inputNombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="inputNombre" required>
+        </div>
+        <div class="col-12">
+          <label for="inputApellido" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="inputApellido" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="example@email.com" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputTelefono" class="form-label">Teléfono</label>
+          <input type="text" class="form-control" id="inputTelefono">
+        </div>
+        <div class="col-12">
+          <label for="inputMensaje" class="form-label"></label>
+          <textarea class="form-control" id="inputMensaje" rows="3" required></textarea>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Soy mayor de 18
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <!-- fin conocenos -->
+
+  <!-- modal -->
+  <!-- promociones modal -->
   <div class="modal fade" id="promocionesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -165,7 +311,7 @@
     </div>
   </div> <!-- Fin de Modal Promociones-->
 
-  <!-- Proximamente Modal -->
+  <!-- Proximamente modal -->
   <div class="modal fade" id="proximamenteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -179,13 +325,13 @@
         </div>
       </div>
     </div>
-  </div> <!-- Fin de Modal Proximamente-->
+  </div> <!-- fin de modal proximamente-->
 
 
   <footer class="d-flex container-fluid">
     <p class="text-center">Creado por Analía Leyez (2023) &#169</p>
   </footer>
-  <!-- Codigo js de Bootstrap -->
+  <!-- codigo js de bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>

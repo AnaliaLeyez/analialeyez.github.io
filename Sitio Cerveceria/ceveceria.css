@@ -1,3 +1,15 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.fondo-claro{
+background-color: rgb(244, 218, 179);
+}
+
+.fondo-oscuro{
+background-color:rgb(76, 88, 88);
+}
+
 h1 {
     font-family: 'Rubik Moonrocks', cursive;
     font-size: 5rem;
@@ -44,10 +56,9 @@ h2{
 }
 
 .lista-novedades li a{
-    background-color: white;
     text-decoration: none;
     font-size: 1.2rem;
-    color:grey;
+    color: #2b2f39;
     transition: all .2s ease-in-out;
     display: block;
 }
@@ -70,7 +81,6 @@ h2{
     align-items: center;
     justify-content: center;
 }
-
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -97,6 +107,30 @@ h2{
     color:black;
 }
 
+/* historia */
+.img-historia{
+    max-height: 200px;
+    width: 100%;
+    object-fit: contain;
+}
+
+#historia p,
+#historia h2{
+    color: white;
+}
+
+/* nosotros */
+.card img{
+    max-height: 200px;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* conocenos */
+.mapa iframe{
+    width: 100%;
+    aspect-ratio: 1.2;
+}
 
 footer{
 position: relative;
@@ -104,6 +138,11 @@ bottom: 0;
 background-color: darkgrey;
 color: white;
 }
+
+.scrool-section{
+    scroll-margin-top: 60px;
+}
+
 @media screen and (max-width:768px) {
    .hero{
     height: 70vh;
