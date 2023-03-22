@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Analía Leyez">
+  <meta name="description" content="Sitio Web de fotografía profesional">
+  <meta name="keywords"
+    content="fotógrafo, fotógrafo profesional, fotografía profesional, eventos, bodas, 15 años, videos, book">
+  <!--fuentes Google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">
+  <title>Analía Leyez fotografía</title>
+  <!-- Iconos -->
+  <link rel="icon" type="image/x-icon" href="img/icono-camera.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="css/fotografia.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-camera"></i>
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight">Sobre Mi</a>
+          </li>
+          <!-- Boton desplegable -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Portfolio
+            </a>
+            <ul class="navbar-dropdown-menu dropdown-menu">
+              <li><a class="dropdown-item" href="#">Bodas</a></li>
+              <li><a class="dropdown-item" href="#">15 años</a></li>
+              <li><a class="dropdown-item" href="#">Modelaje</a></li>
+              <li><a class="dropdown-item" href="#">Paisajes</a></li>
+              <li><a class="dropdown-item" href="#">Filmaciones</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+            </ul>
+          </li><!-- Fin Boton desplegable -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          <!-- Boton desplegable -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Más
+            </a>
+            <ul class="navbar-dropdown-menu dropdown-menu">
+              <li><a class="dropdown-item" href="#">Trabajá con nosotros</a></li>
+              <li><a class="dropdown-item" href="#testimonios">Testimonios</a></li>
+              <li><a class="dropdown-item" href="#">Redes Sociales</a></li>
+              <li><a class="dropdown-item" href="#acordionPreguntasFrecuentes">Preguntas frecuentes</a></li>
+              <li>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+              </li>
+            </ul>
+          </li><!-- Fin Boton desplegable -->
+        </ul>
+      </div>
+    </div><!-- Fin Barra de navegacion -->
+  </nav>
+
+  <!--Seccion hero -->
+  <section id="inicio" class="hero">
+    <div class="hero-principal container-fluid">
+      <div class="hero-grid">
+        <h1 class="nombre-fotografo">Analía Leyez</h1>
+        <p class="rubro">fotografía profesional</p>
+        <h2 class="slogan">Captamos momentos únicos y los hacemos eternos.</h2>
+      </div>
+    </div>
+  </section> <!--Fin Seccion hero -->
+
+  <!--Seccion portfolio -->
+  <section class="portfolio">
+    <div class="contenedor-portfolio">
+      <h1 class="portfolioTituloGrilla text-center">Portfolio</h1>
+      <p class="servicios bodas my-0"><a href="#">Bodas</a></p>
+      <p class="servicios quince my-0"><a href="#">15 años</a></p>
+      <p class="servicios modelaje my-0"><a href="#">Modelaje</a></p>
+      <p class="servicios paisaje my-0"><a href="#">Paisajes</a></p>
+      <div class="servicios filmaciones my-0">
+        <video autoplay loop>
+          <source src="img/filmaciones.mp4" type="video/mp4">
+        </video>
+        <a href="#" class="enlaceFilmaciones">Filmaciones</a>
+      </div>
+    </div>
+  </section><!--Fin Seccion portfolio -->
+
+  <section> <!--preguntas frecuentes, carrusel de testimonios y aside-->
+    <div class="row mx-0">
+      <!-- Preguntas frecuentes -->
+      <div class="col col-sm-12 col-md-6 col-lg-4">
+        <div class="accordion accordion-flush" id="acordionPreguntasFrecuentes">
+          <h2>Preguntas Frecuentes</h2>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                ¿Cuánto demoran en entregar el trabajo?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#acordionPreguntasFrecuentes">
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ex aperiam, non
+                quibusdam sint aspernatur amet mollitia dolorum magnam voluptatum voluptates necessitatibus eius fugit
+                consequuntur dicta quisquam magni sed sequi? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum excepturi ea saepe veniam, quasi corporis praesentium molestiae, quas neque totam possimus
+                quaerat. Ipsa, porro voluptatem dignissimos dolore pariatur culpa quas.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                ¿Con cuánto tiempo debo reservar?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#acordionPreguntasFrecuentes">
+              <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint illo similique
+                libero ipsum accusamus asperiores ducimus, exercitationem voluptatibus totam ab dolorem architecto
+                debitis facere. Cupiditate minima neque adipisci blanditiis dicta?</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                ¿Cómo es el plan de pago del servicio?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#acordionPreguntasFrecuentes">
+              <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus esse iure
+                blanditiis est ducimus in voluptatum adipisci quaerat officiis tempore neque ad nisi excepturi
+                voluptatibus, fugit inventore porro iste deleniti. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Dolore distinctio doloribus voluptas consectetur inventore ullam totam, dolorum velit sint
+                aperiam. Nulla tempore deleniti fuga ullam architecto quidem at provident similique.</div>
+            </div>
+          </div>
+        </div>
+      </div><!-- fin Preguntas frecuentes -->
+
+      <!-- Carrusel de testimonios -->
+      <section id="testimonios" class="testimonios col col-sm-12 col-md-6 col-lg-4">
+        <h1 class="text-center">Testimonios</h1>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <p class="testimonio-texto">Excelente profesional y muy cordial. Parte de su trabajo se puede ver en mi
+                  foto de perfil. Identificó lo que quería y quedé más que conforme con el resultado. Nunca había
+                  quedado conforme con las fotos de retrato, sea por la expresión, el balance de color, etc. Sin dudas
+                  lo recomiendo!</p>
+                <p class="testimonio-nombre d-inline">Leandro Merlo
+                  <img src="img/testimonio1.jpg" class="testimonio-imagen d-inline rounded-circle"
+                    alt="foto testimonio 1">
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <p class="testimonio-texto">Excelente servicio! Los volveré a contratar en cuanto tenga oportunidad,
+                  hermosa la fiesta retratada tal cual la vivimos con alegría y felicidad, Gracias genios!!!</p>
+                <p class="testimonio-nombre d-inline">Isabel Massia
+                  <img src="img/testimonio2.jpg" class="testimonio-imagen d-inline rounded-circle"
+                    alt="foto testimonio 2">
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <p class="testimonio-texto">La verdad excelente todo, calidad, excelencia, buena onda uno se siente muy
+                  a gusto, la fiesta de mi hija salio super y vos le diste la confianza para que ella se sienta
+                  terriblemente cómoda, y esta Feliz con las fotos. Muchas Gracias por todo y mos vemos en la próxima
+                  fiesta obviamente.</p>
+                <p class="testimonio-nombre d-inline">Adrián Otamendi
+                  <img src="img/testimonio3.jpg" class="testimonio-imagen d-inline rounded-circle"
+                    alt="foto testimonio 3">
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <p class="testimonio-texto">Súper recomendable.
+                  Estuvieron en todos los detalles, me entregaron súper rápido las fotos de mi casamiento. Superaron mis
+                  expectativas!</p>
+                <p class="testimonio-nombre d-inline">Constanza Goñi
+                  <img src="img/testimonio4.jpeg" class="testimonio-imagen d-inline rounded-circle"
+                    alt="foto testimonio 4">
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section><!-- Fin Carrusel de testimonios -->
+
+      <!-- Aside-->
+      <aside id="aside" class="aside col col-md-12 col-lg-4">
+        <h2 class="text-center">También te sugerimos...</h2>
+        <ul class="lista-aside">
+          <li>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalLoQueSeViene">
+              Lo que se viene en el rubro de la fotografía
+            </a>
+          </li>
+          <li class="lista-aside">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalNuevosRubros">
+              Seguimos creciendo! ahora tambíen cubrimos estos rubros...
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Tendencias
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Notas
+            </a>
+          </li>
+          <li>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalTips">
+              Tips para una sesión de fotos exitosa
+            </a>
+          </li>
+        </ul>
+      </aside><!-- Fin de aside -->
+
+    </div> <!--fin seccion preguntas frecuentes, testimonios y aside-->
+
+  </section>
+
+
+
+  <!-- MODAL loQueSeViene -->
+  <div class="modal fade" id="modalLoQueSeViene" tabindex="-1" aria-labelledby="modalLabelLoQueSeViene"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="modalLabelLoQueSeViene">Lo que se viene...</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ab laudantium nemo dolores quasi omnis
+          explicabo aliquam, nihil mollitia, debitis quod suscipit odio. Eaque repellat laboriosam magnam est minima! A.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla omnis unde iusto at est consectetur
+          consequatur perferendis facere debitis impedit, natus eveniet reprehenderit, consequuntur laborum sunt
+          mollitia? Magni, nostrum odit!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit impedit, quod qui, libero mollitia
+          tempora, voluptatem provident excepturi soluta pariatur doloribus atque aperiam perferendis ullam
+          exercitationem laborum amet. Doloribus, doloremque. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Aliquam quis dolorum repellendus laudantium quibusdam illum minus explicabo molestiae possimus natus, ex
+          dolore laboriosam quo quae sunt nam quia autem aut.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus neque, sequi nostrum, ipsa dolor quod,
+          suscipit quisquam veniam nam libero exercitationem quibusdam! Voluptatum omnis sed modi pariatur vitae iusto
+          illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio molestiae iste ducimus magnam possimus
+          incidunt amet beatae fuga facere! Excepturi, quibusdam. Ipsam officia repellat pariatur rerum quae ad, dolore
+          explicabo.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis earum odit numquam eaque nulla minus soluta
+          aliquam fuga quibusdam inventore ad accusantium quas nostrum vitae quae, eius dolorem, quasi quaerat! Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Fugit asperiores eaque sit saepe quisquam praesentium quis.
+          Corrupti rem ipsam, dolorum aspernatur commodi eius, praesentium similique sed consectetur veritatis hic
+          animi.
+        </div>
+      </div>
+    </div>
+  </div> <!--FIN MODAL loQueSeViene-->
+
+  <!-- MODAL NuevosRubros -->
+  <div class="modal fade" id="modalNuevosRubros" tabindex="-1" aria-labelledby="modalLabelNuevosRubros"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <ul class="lista-nuevos-rubros">
+            <li>
+              <h3>Retratos</h3>
+            </li>
+            <li>
+              <h3>Recitales</h3>
+            </li>
+            <li>
+              <h3>Embarazos</h3>
+            </li>
+            <li>
+              <h3>Fotos publicitarias</h3>
+            </li>
+            <li>
+              <h3>Bautismos</h3>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- FIN MODAL NuevosRubros -->
+
+  <!-- OFFCANVAS Sobre mi -->
+  <div class="offcanvas-sobreMi offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Un poco de mi historia...</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      Analía Leyez es fotógrafa profesional especializada en eventos, modelaje y postales turísticas. Trabaja en CABA,
+      provincia de Buenos Aires y toda la Argentina.
+      Me dedico a la fotografía profesional desde hace más de 10 años.
+      <hr>
+      Tuve una vocación artística muy marcada ya desde chica: pasaba horas dibujando y yendo a cursos para explotar mi
+      creatividad.
+      Durante 2011 y 2012 he recorrido los lugares naturales más icónicos de la Argentina, realizando miles de
+      fotografías en alta calidad. Con ese material, en 2014 armé el Banco de imágenes Argentina on-line, un recurso
+      profesional que todavía sigue creciendo y actualizándose día a día. Todos los años mi estudio edita un Calendario
+      con paisajes de Argentina, dirigido tanto a las empresas como a los particulares.
+      En 2013 me asocié con quienes hoy forma parte de este equipo, o familia, y desde entonces nuestra demanda no para
+      de crecer.
+      En los ratos libres me dedico a cocinar, leer novelas policiales y hacer yoga.
+      <hr class="border border-dark border-1 opacity-50">
+      Contame tu proyecto, y te ayudaremos a visualizarlo! siempre buscamos nuevos desafios.
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="d-flex container-fluid">
+    <p class="text-center">Creado por Analía Leyez (2023) &#169</p>
+  </footer>
+
+  <!-- Codigo Js de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

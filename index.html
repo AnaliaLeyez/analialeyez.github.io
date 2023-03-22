@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Analía Leyez">
+  <meta name="description" content="Portafolio de Analía Leyez, desarrollo web">
+  <meta name="keywords" content="Desarrollo web, HTML, CSS, JavaScript, React">
+  <link href="css/estilo.css" rel="stylesheet">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Analía Leyez | Desarrollo Web Front-End</title>
+  <!--icono-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="icon" type="image/x-icon" href="imagenes/icon.png">
+  <!--fuentes Google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Rubik+Dirt&family=Space+Mono&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav id="barraNavegacion" class="navbar navbar-expand-sm">
+    <div id="fondoBarraNavegacion"></div>
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <a class="navbar-brand" href="#"><img src="imagenes/icon.png" width="50" alt="Logo de la página"></a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonios">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Section Hero-->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal">
+      <img class="imagen-perfil" src="imagenes/fotoperfil.png" alt="Foto de perfil de Analía">
+      <h1>Hola, soy Analía Leyez.</h1>
+      <h2>Soy docente en matemática y actualmente me estoy especializando en la programación para desarrollo Web.</h2>
+      <img class="imagen-hero-inferior img-fluid" src="imagenes/hero-inferior.svg"
+        alt="Monitor y logos Html, Css, JavaScript, React">
+    </div>
+  </section>
+
+  <!--Sobre mi-->
+  <section id="sobre-mi" class="sobre-mi seccion-oscura">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">Te invito a conocerme</h2>
+      <p class="seccion-texto">Hola! Soy Analía. Soy docente de matemática hace 8 años y actualmente 
+        estoy intentando un cambio de rubro, aunque sin dejar de lado mi pasión por la matemática. 
+        Siempre me gustó la idea de la matemática aplicada pero ninguna de las opciones que conocía me parecían atractivas como carrera.
+       Afortunadamente, desde 2022 tengo la oportunidad de vivir en Canadá y eso me obligó a alejarme al menos temporalmente del aula 
+       y, por ende, replantearme mi rumbo profesional.<br>
+        Desde febrero del 2023 empecé a estudiar algunos de los lenguages iniciales para programación Web, como Html, Css, JavaScript,
+      y con ello volví a sentir la misma pasión que en su momento me llevó a ser docente. Me parece un mundo muy interesante del que quiero sin dudas formar parte.<br>
+    Por ello, estoy actualmente aprendiendo tanto de forma autónoma, con cursos de CodeAcademy, freeCodeCamp y tutoriales de YouTube, como con un curso
+  de E-learning en UTN.</p>
+    </div>
+  </section>
+
+  <!--Experiencia-->
+  <section class="experiencia seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+        <!--Desarrollo Web-->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Desarrollo Web</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum molestiae incidunt alias itaque vero?
+            Ipsam, asperiores.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">HTML</span>
+            <span class="badge text-bg-primary">Css</span>
+            <span class="badge text-bg-primary">JavaScript</span>
+            <span class="badge text-bg-primary">React</span>
+          </div>
+        </div>
+        <!-- Articulos -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Artículos</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum molestiae incidunt alias itaque vero?
+            Ipsam, asperiores.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Escribir</span>
+            <span class="badge text-bg-primary">Editar</span>
+            <span class="badge text-bg-primary">Blogs</span>
+          </div>
+        </div>
+        <!-- Estudiante -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Estudios</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum molestiae incidunt alias itaque vero?
+            Ipsam, asperiores.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">freeCodeCamp</span>
+            <span class="badge text-bg-primary">CodeAcademy</span>
+            <span class="badge text-bg-primary">Utn Learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="proyectos-recientes d-flex flex-column">
+    <h2 class="seccion-titulo">Mis proyectos recientes</h2>
+    <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente</h3>
+    <!-- Galeria de proyectos -->
+    <div class="container text-center proyectos-contenedor">
+      <div class="row">
+        <div class="proyectosBackground"></div>
+        <!-- Proyecto 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyecto1.png" alt="sitio fotografía profesional">
+            <div class="overlay">
+              <p>Página web fotografía profesional</p>
+              <div class="iconos-contenedor d-flex">
+                <a href="https://github.com/AnaliaLeyez/programadorwebinicial/tree/main/Sitio%20Fot%C3%B3grafo%20profesional" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="Sitio Fotógrafo profesional/index.html" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyecto2.png" alt="proyecto 2">
+            <div class="overlay">
+              <p>Página Web cerveceria'</p>
+              <div class="iconos-contenedor d-flex">
+                <a href="https://github.com/AnaliaLeyez/programadorwebinicial/tree/main/Sitio%20Cerveceria" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="Sitio Cerveceria/index.html" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyecto3.png" alt="proyecto 3">
+            <div class="overlay">
+              <p>Proyecto 3</p>
+              <div class="iconos-contenedor d-flex">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyecto4.png" alt="proyecto 4">
+            <div class="overlay">
+              <p>Proyecto 4</p>
+              <div class="iconos-contenedor d-flex">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyecto5.png" alt="proyecto 5">
+            <div class="overlay">
+              <p>Proyecto 5</p>
+              <div class="iconos-contenedor d-flex">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyecto6.png" alt="proyecto 6">
+            <div class="overlay">
+              <p>Proyecto 6</p>
+              <div class="iconos-contenedor d-flex">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-info">
+        Ver más proyectos
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+    </a>
+  </section>
+  <!-- Ariculos -->
+  <section class="articulos justify-content-start">
+    <h2 class="seccion-titulo texto-negro">Artículos</h2>
+    <div class="card">
+      <div class="card-header">
+        Más recientes
+      </div>
+      <ul class="list-group list-group-flush">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">El decorador @property en Python - cómo usarlo, ventajas y sintaxis</li>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">El decorador @property en Python - cómo usarlo, ventajas y sintaxis</li>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">Python tutorial ciclos while - while True ejemplos de sintaxis y ciclos infinitos
+          </li>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">Python leer archivo JSON - cómo cargar JSON desde un archivo y procesar dumps</li>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">Python cómo escribir en un archivo - abrir, leer, escribir y otras funciones de
+            archivos explicadas</li>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">¿Para qué se usa Python? 10+ usos del lenguaje de programación Python</li>
+        </a>
+      </ul>
+    </div>
+    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-info">
+        Ver más Artículos
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+    </a>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="testimonios seccion-oscura">
+    <h2 class="seccion-titulo">Testimonios</h2>
+    <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+
+    <!-- Carrusel -->
+    <div id="testimonios-carrusel" class="carousel carousel-dark slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img src="imagenes/cliente1.svg" class="testimonio-imagen rounded-circle d-block" alt="cliente 1">
+            <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore
+              aut inventore hic animi natus earum molestias nostrum quas odit voluptatibus adipisci aperiam nesciunt</p>
+            <div class="testimonio-info">
+              <p class="cliente">Gino</p>
+              <p class="cargo">Gerente de proyectos en Desarrollo Web</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img src="imagenes/cliente2.svg" class="testimonio-imagen rounded-circle d-block" alt="cliente 2">
+            <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore
+              aut inventore hic animi natus earum molestias nostrum quas odit voluptatibus adipisci aperiam nesciunt</p>
+            <div class="testimonio-info">
+              <p class="cliente">Nora</p>
+              <p class="cargo">Gerente de DiseñaMiPáginaWeb</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img src="imagenes/cliente3.svg" class="testimonio-imagen rounded-circle d-block" alt="cliente 3">
+            <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore
+              aut inventore hic animi natus earum molestias nostrum quas odit voluptatibus adipisci aperiam nesciunt</p>
+            <div class="testimonio-info">
+              <p class="cliente">Leonardo</p>
+              <p class="cargo">Director de AprendeAProgramar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto seccion-clara">
+    <div class="container">
+      <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 seccion-titulo">
+            Hablemos!
+          </div>
+          <div class="col-12 col-md-4 descripcion">
+            Contactame para iniciar tu proyecto de desarrollo Web Y haré que tu visión se vuelva realidad
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="mailto:any15015@gmail.com">
+              <button type="button">
+                Contacto
+                <i class="bi bi-envelope-at-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de pagina (footer) -->
+  <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-icono" src="imagenes/icon.png" alt="Logo de portafolio">
+    <p class="footer-texto text-center texto-negro">Aprendo y creo contenido todos los días.<br> Creemos un proyecto juntos.</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://twitter.com/leyezAnalia" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="https://github.com/AnaliaLeyez" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/analia-leyez/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/analialeyez/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="mailto:any15015@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=17786976775">
+          <i aria-hidden="true" class="bi bi-whatsapp"></i>
+    </div>
+    <div class="derechos-de-autor">Creado por Analía Leyez (2023) &#169;</div>
+  </footer>
+  <!--Bootstrap js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

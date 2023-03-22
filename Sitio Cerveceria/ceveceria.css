@@ -1,0 +1,112 @@
+h1 {
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 5rem;
+    color: white;
+}
+
+h2{
+    font-family: 'Rubik Dirt', cursive;
+    color: rgb(43, 43, 43);
+}
+
+.hero {
+    margin-top: 40px;
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: center;
+    height: 95vh;
+    color:white;
+}
+
+.slogan {
+    color:black;
+    font-weight: bolder;
+    text-shadow: 1px 2px white;
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 2rem;
+}
+
+.lista-novedades{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-novedades li a img{
+    width: 80px;
+    margin: 10px;
+    border-radius: 30% 10%;
+    filter: grayscale(35%);
+    transition: all .2s ease-in-out;
+    margin-right: 1rem;
+}
+
+.lista-novedades li a{
+    background-color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:grey;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.lista-novedades li a:hover{
+    background-color: #2b2f39;
+    color:#dadada;
+}
+
+.lista-novedades li a:hover img{
+    filter: none;
+}
+
+/* CARRUSEL Testimonios */
+.carousel-item .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(108%);
+}
+
+.testimonio-imagen{
+    height: 70px;
+    width: 70px;
+    margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.testimonio-barrio{
+    font-size: 0.8rem;
+    color: black;
+}
+
+.testimonios h2{
+    color:black;
+}
+
+
+footer{
+position: relative;
+bottom: 0;
+background-color: darkgrey;
+color: white;
+}
+@media screen and (max-width:768px) {
+   .hero{
+    height: 70vh;
+   }
+
+}
