@@ -51,7 +51,7 @@
               Portfolio
             </a>
             <ul class="navbar-dropdown-menu dropdown-menu">
-              <li><a class="dropdown-item" href="#">Bodas</a></li>
+              <li><a class="dropdown-item" href="bodas.html">Bodas</a></li>
               <li><a class="dropdown-item" href="#">15 años</a></li>
               <li><a class="dropdown-item" href="#">Modelaje</a></li>
               <li><a class="dropdown-item" href="#">Paisajes</a></li>
@@ -62,7 +62,7 @@
             </ul>
           </li><!-- Fin Boton desplegable -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
           <!-- Boton desplegable -->
           <li class="nav-item dropdown">
@@ -70,9 +70,10 @@
               Más
             </a>
             <ul class="navbar-dropdown-menu dropdown-menu">
+              <li><a class="dropdown-item" href="staff.html">Nuestro staff</a></li>
               <li><a class="dropdown-item" href="#">Trabajá con nosotros</a></li>
               <li><a class="dropdown-item" href="#testimonios">Testimonios</a></li>
-              <li><a class="dropdown-item" href="#">Redes Sociales</a></li>
+              <li><a class="dropdown-item" href="#redes-sociales">Redes Sociales</a></li>
               <li><a class="dropdown-item" href="#acordionPreguntasFrecuentes">Preguntas frecuentes</a></li>
               <li>
                 <form class="d-flex" role="search">
@@ -88,7 +89,7 @@
   </nav>
 
   <!--Seccion hero -->
-  <section id="inicio" class="hero">
+  <section id="inicio" class="hero scrool-section">
     <div class="hero-principal container-fluid">
       <div class="hero-grid">
         <h1 class="nombre-fotografo">Analía Leyez</h1>
@@ -99,7 +100,7 @@
   </section> <!--Fin Seccion hero -->
 
   <!--Seccion portfolio -->
-  <section class="portfolio">
+  <section class="portfolio scrool-section">
     <div class="contenedor-portfolio">
       <h1 class="portfolioTituloGrilla text-center">Portfolio</h1>
       <p class="servicios bodas my-0"><a href="#">Bodas</a></p>
@@ -118,7 +119,7 @@
   <section> <!--preguntas frecuentes, carrusel de testimonios y aside-->
     <div class="row mx-0">
       <!-- Preguntas frecuentes -->
-      <div class="col col-sm-12 col-md-6 col-lg-4">
+      <div class="preguntas scrool-section col col-sm-12 col-md-6 col-lg-4">
         <div class="accordion accordion-flush" id="acordionPreguntasFrecuentes">
           <h2>Preguntas Frecuentes</h2>
           <div class="accordion-item">
@@ -171,7 +172,7 @@
       </div><!-- fin Preguntas frecuentes -->
 
       <!-- Carrusel de testimonios -->
-      <section id="testimonios" class="testimonios col col-sm-12 col-md-6 col-lg-4">
+      <section id="testimonios" class="testimonios scrool-section col col-sm-12 col-md-6 col-lg-4">
         <h1 class="text-center">Testimonios</h1>
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-inner">
@@ -235,7 +236,7 @@
       </section><!-- Fin Carrusel de testimonios -->
 
       <!-- Aside-->
-      <aside id="aside" class="aside col col-md-12 col-lg-4">
+      <aside id="aside" class="aside scrool-section col col-md-12 col-lg-4">
         <h2 class="text-center">También te sugerimos...</h2>
         <ul class="lista-aside">
           <li>
@@ -267,10 +268,113 @@
       </aside><!-- Fin de aside -->
 
     </div> <!--fin seccion preguntas frecuentes, testimonios y aside-->
-
   </section>
 
+  <!-- seccion contacto -->
+  <section>
+    <div id="contacto" class="scrool-section container-fluid">
+      <div clas="col">
+        <h1 class="text-center">Contacto</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2">
+          <h2 class="text-center">Envianos un mensaje</h2>
+          <form class="row g-1">
+            <div class="col-5">
+              <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" required>
+            </div>
+            <div class="col-7">
+              <input type="text" class="form-control" id="inputAsunto" placeholder="Asunto" required>
+            </div>
+            <div class="col-12">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@email.com" required>
+            </div>
+            <div class="col-12">
+              <label for="inputMensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="inputMensaje" rows="3" placeholder="Hola! me gustaría consultar por..."
+                required></textarea>
+            </div>
+            <div class="col-12 my-3">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-1">
+          <h2 class="text-center">Vení a conocer nuestro estudio</h2>
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.011300061504!2d-58.413183749480865!3d-34.60387576491708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8c87fde6e1%3A0x2c6d4110fbf70ca4!2sAv.%20Corrientes%203247%2C%20C1193%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2sca!4v1679687042043!5m2!1ses-419!2sca"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="row container-fluid">
+      <div class="col">
+        <h4 class="medios-contacto d-flex align-items-center">MAIL</h4>
+        <ul class="">
+          <li class="flex">
+            <div class="iconos-redes-sociales d-flex align-items-center">
+              <a href="mailto:example@email.com" class=""><i class="bi bi-at"></i></a>example@email.com
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4 class="medios-contacto">Telefonos</h4>
+        <ul class="">
+          <li class="flex">
+            <div class="iconos-redes-sociales d-flex align-items-center">
+              <a><i class="bi bi-telephone"></i></a>
+              011 5555 5555 / 9999
+            </div>
+          </li>
+          <li class="flex">
+            <div class="iconos-redes-sociales d-flex align-items-center">
+              <a href="https://api.whatsapp.com/send?phone=9115555555">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              WhatsApp
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="redes-sociales" class="col">
+        <h4 class="medios-contacto scrool-section">Redes sociales</h4>
+        <ul class="">
+          <li class="flex">
+            <div class="iconos-redes-sociales d-flex align-items-center">
+              <a href="https://www.instagram.com/" class="">
+                <i class="bi bi-instagram"></i>
+              </a>Instagram
+            </div>
+          </li>
+          <li class="flex">
+            <div class="iconos-redes-sociales d-flex align-items-center">
+              <a href="https://www.facebook.com/" class="">
+                <i class="bi bi-facebook"></i>
+              </a>Facebook
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4 class="medios-contacto">Direccion</h4>
+        <ul class="">
+          <li class="flex">
+            <div class="iconos-redes-sociales d-flex align-items-center">
+              <a
+                href="https://www.google.ar/maps/place/Av.+Corrientes+3247,+C1193+CABA,+Argentina/@-34.6038758,-58.4131837,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcca8c87fde6e1:0x2c6d4110fbf70ca4!8m2!3d-34.6038802!4d-58.4109897!16s%2Fg%2F11cs887n0t">
+                <i class="bi bi-geo-alt"></i>
+              </a>
+              Av. Corrientes 3247. Primer piso, local 18.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section><!-- fin seccion contacto -->
 
   <!-- MODAL loQueSeViene -->
   <div class="modal fade" id="modalLoQueSeViene" tabindex="-1" aria-labelledby="modalLabelLoQueSeViene"

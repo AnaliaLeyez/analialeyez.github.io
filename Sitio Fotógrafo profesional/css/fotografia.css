@@ -216,6 +216,11 @@ opacity: 0.7;
 .accordion{
   padding-top: 15px;
 }
+
+.preguntas{
+  border-bottom: 2px solid var(--color-navbar);
+}
+
 /* CARRUSEL TESTIMONIOS */
 .carousel-item .container{
   width: 100%;
@@ -261,8 +266,9 @@ opacity: 0.7;
 
 /* ASIDE */
 .aside{
-background-color: #dadada;
+/* background-color: #dadada; */
 padding-top: 15px;
+border-bottom: 2px solid var(--color-navbar);
 }
 
 .lista-aside, 
@@ -279,7 +285,7 @@ padding-top: 15px;
 }
 
 .lista-aside li a{
-  background-color: #dadada;
+  /* background-color: #dadada; */
   text-decoration: none;
   font-size: 1.2rem;
   color:grey;
@@ -300,6 +306,72 @@ padding-top: 15px;
   filter: none;
 }
 
+/* contacto */
+#contacto{
+  background-image: url(../img/backContacto.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#contacto h1{
+  letter-spacing: 8px;
+  font-size: calc(3rem + .9vw);
+}
+
+#contacto h1,
+#contacto h2,
+#contacto label {
+  color:var(--color-portada);
+  color:var(--color-portada);
+  text-shadow: 1px 2px black;
+}
+
+.mapa iframe{
+    width: 80%;
+    aspect-ratio: 1.5;
+}
+
+li{
+  list-style:none;
+}
+
+.iconos-redes-sociales a{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: var(--color-navbar);
+  transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+
+  }
+  
+  .iconos-redes-sociales a:hover{
+    background-color: var(--color-portada);
+    border: 2px solid var(--texto-navbar);
+  }
+  
+  .iconos-redes-sociales a:hover i{
+   color:black;
+  }
+  
+h4 {
+    border-bottom: 1px solid black;
+    margin: 15px 10px 5px 5px;
+    padding: 0px 0px 15px 15px;
+    }
+
 /* SOBRE MI OFFCANVAS */
 .offcanvas-sobreMi{
   background-color: var(--color-portada);
@@ -312,6 +384,10 @@ footer{
   justify-content: center;
 }
 
+.scrool-section{
+  scroll-margin-top: 60px;
+  scroll-behavior: smooth;
+}
 
 @media screen and (max-width: 768px) {
   .navbar-brand {
