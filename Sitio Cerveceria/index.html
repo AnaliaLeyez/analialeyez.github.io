@@ -255,26 +255,26 @@
     <!-- inicio formulario contacto -->
     <div class="col-md-4  mt-4 mt-sm-0">
       <h2>Contactanos</h2>
-      <form class="row g-3">
+      <form action="https://formsubmit.co/any15015@gmail.com" method="POST" class="row g-3">
         <div class="col-12">
           <label for="inputNombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="inputNombre" required>
+          <input type="text" class="form-control" id="inputNombre" name="nombre" required>
         </div>
         <div class="col-12">
           <label for="inputApellido" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="inputApellido" required>
+          <input type="text" class="form-control" id="inputApellido" name="apellido" required>
         </div>
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="example@email.com" required>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="example@email.com" name="email" required>
         </div>
         <div class="col-md-6">
           <label for="inputTelefono" class="form-label">Teléfono</label>
-          <input type="text" class="form-control" id="inputTelefono">
+          <input type="text" class="form-control" id="inputTelefono" name="telefono">
         </div>
         <div class="col-12">
           <label for="inputMensaje" class="form-label"></label>
-          <textarea class="form-control" id="inputMensaje" rows="3" required></textarea>
+          <textarea class="form-control" id="inputMensaje" rows="3" name="mensaje" required></textarea>
         </div>
         <div class="col-12">
           <div class="form-check">
@@ -287,6 +287,9 @@
         <div class="col-12">
           <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
+
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+        <input type="hidden" name="_captcha" value="false">
       </form>
     </div>
 
