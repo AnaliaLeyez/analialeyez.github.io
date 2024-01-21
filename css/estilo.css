@@ -261,6 +261,7 @@ h1 {
 
 .overlay i {
   color: black;
+  text-shadow: 0.5px 0.5px white;
   font-size: 50px;
   margin: 10px;
 }
