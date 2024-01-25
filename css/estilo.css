@@ -439,6 +439,10 @@ footer {
   .proyecto-lenguaje img{
     display: none;
   }
+
+  .proyecto-lenguaje-left img{
+    display: none;
+  }
 }
 
 @media screen and (max-width:400px) {
@@ -453,10 +457,18 @@ footer {
   .proyecto-lenguaje img{
     width: 1.5rem;
   }
+
+  .proyecto-lenguaje-left{
+    width: 1.5rem;
+  }
 }
 
 @media screen and (max-width:430px) {  
   .proyecto-lenguaje img{
+    width: 2rem;
+  }
+
+  .proyecto-lenguaje-left{
     width: 2rem;
   }
 }
