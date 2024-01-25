@@ -254,8 +254,19 @@ button.navbar-toggler {
   max-height: 90%;
 }
 
+.proyecto-lenguaje-left{
+  position: absolute;
+  z-index: 2;
+  bottom: 9%;
+  left: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 90%;
+}
 
-.proyecto-lenguaje img{
+.proyecto-lenguaje img, .proyecto-lenguaje_left img{
   align-items: center;
   justify-content: center;
   width: 90%;
